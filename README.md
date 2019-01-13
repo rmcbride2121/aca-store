@@ -1,13 +1,17 @@
 # Intro
 The purpose of this project is to build an Amazon.com like ecommerce website using the front end skills that we should possess by now. You may be suprised that you have already learned all the skills necessary to do this.
 # Prerequisite
-* Know how to loop arrays, or map
-* Know how to construct strings, concatenation or string template literals
-* Know how to use built in tools properly, innerHTML
+* Know how to loop arrays and use array functions like map.
+* Know how to construct strings, concatenation or string template literals.
+* Know how to learn about the use of built in tools such as innerHTML or sessionStorage. (read instruction manual)
 
 # Setup
 * Fork, Clone, Create a pull request
 * As you complete each feature of the app; add, commit and push so that we can track your progress
+* Simply open the index.html file in a chrome browser window. Double click on the file or use the menu -> file -> open file
+* Refresh the browser whenever you make changes to see if they worked.
+
+
 
 
 # Instructions
@@ -68,9 +72,7 @@ The purpose of this project is to build an Amazon.com like ecommerce website usi
 ## Debug  
 * Make sure you know how to debug with console.log
 * Ensure functions are being called by using console.log to see if the code was executed
-## Open the page
-* Simply open the index.html file in a chrome browser window. Double click on the file or use the menu -> file -> open file
-* Refresh the browser whenever you make changes to see if they worked.
+
 ## Questions
 * Why is storing the shopping cart in sessionStorage not the best choice?
 * What should happen when the Place Order button is clicked?
