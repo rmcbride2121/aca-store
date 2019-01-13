@@ -1,6 +1,9 @@
 # Intro
 The purpose of this project is to build an Amazon.com like ecommerce website using the front end skills that we should possess by now. You may be suprised that you have already learned all the skills necessary to do this.
-
+# Prerequisite
+* Know how to loop arrays, or map
+* Know how to construct strings, concatenation or string template literals
+* Know how to use built in tools properly, innerHTML
 
 # Setup
 * Fork, Clone, Create a pull request
