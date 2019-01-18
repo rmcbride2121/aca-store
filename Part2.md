@@ -4,7 +4,7 @@ We have coded our ACA Store such that it works within the confines of the curren
 
 http://plnkr.co/edit/uKvC1xPw4ubkF6Nc2nbl?p=preview
 
-Let's use a real backend server to store the important information of our store. We need to store the products and the cart on the server instead of on the client. We cannot use sessionStorage to store the cart because it won't allow the user to access their cart from another computer or browser. Our server is capable of handling all our basic http methods: GET, POST, PUT, DELETE.
+Let's use a real backend server to maintain the important information of our store. We need to store the products and the cart on the server instead of on the client. We cannot use sessionStorage to store the cart because it won't allow the user to access their cart from another computer or browser. Our server is capable of handling all our basic http methods: GET, POST, PUT, DELETE. Use the built in javascript tool fetch to create the http messages we need.
 
 https://acastore.herokuapp.com
 
