@@ -51,29 +51,11 @@ function search() {
 
     let searchWord = document.getElementById('input').value;
     //let searchWord = input.toUpperCase();
-    let filteredProducts = products.filter(p=>p.name == searchWord);
+    let filteredProducts = products.filter(p=>p.name.includes(searchWord));
     listProduct(filteredProducts);
 
     console.log(filteredProducts);
     console.log('logic works');
-
-
-    // console.log('function works');
-    // var input, filter, list, item, div, i, txtValue;
-    // input = document.getElementById("input");
-    // filter = input.value.toUpperCase();
-    // list = document.getElementById("list");
-    // item = list.getElementsById("item");
-    // for (i = 0; i < item.length; i++) {
-    //     div = item[i].getElementsByTagName("div")[0];
-    //     txtValue = div.textContent || div.innerText;
-    //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-    //         item[i].style.display = "";
-    //     } else {
-    //         item[i].style.display = "none";
-    //     }
-    // }
-    // console.log('logic works');
 }
 
 
