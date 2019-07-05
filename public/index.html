@@ -32,8 +32,11 @@
               </button>
             </div>
           </div>
-          <div class="cart">
-              <button class="btn btn-primary" type="button">View Cart <i class="fas fa-shopping-cart"></i></button>
+          <div class="cart dropdown">
+              <button class="btn btn-primary dropbtn" type="button">View Cart <i class="fas fa-shopping-cart"></i></button>
+              <div id="shoppingCart" class="dropdown-content">
+                  <a href="#">Cart is Empty</a>
+                </div>
           </div>
           
     </div>
@@ -41,10 +44,13 @@
     <div id="dropdown">
         <div class="dropdown">
             <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
+            Choose Category
             </button>
             <div class="dropdown-menu" id="categoryList">
-            
+                <option value="" selected disabled hidden>--Choose--</option>
+              <option class="dropdown-item">Food</option>
+              <option class="dropdown-item">Electronics</option>
+              <option class="dropdown-item">Sporting</option>
             </div>
         </div>
     </div>

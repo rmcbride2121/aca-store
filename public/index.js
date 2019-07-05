@@ -1,9 +1,10 @@
-//stuff
+//variables
 
 
+
+//functions
 function listProduct(products) {
     let productDivs = "";
-    let productCategory = "";
 
     for(let i=0; i < products.length; i++) {
         let product = products[i];
@@ -16,10 +17,11 @@ function listProduct(products) {
         productDivs += `<div class="card-text">${product.price}</div>`
         productDivs += `<div class="card-text">Rating: ${product.rating}</div>`
         productDivs += `<div class="card-text">Reviews: ${product.reviewsNum}</div>`
-        productDivs += `<button class="btn btn-primary">Add to Cart</button> `
+        productDivs += `<div class="card-text">"${product.description}"</div>`
+        productDivs += `<button class="btn btn-primary" onclick="addToCart(products)">Add to Cart</button> `
         productDivs += `<div class="dropdown">
                             <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                            Dropdown button
+                            Amount
                             </button>
                             <div class="dropdown-menu">
                             <option class="dropdown-item" value="1">1</option>
@@ -36,22 +38,31 @@ function listProduct(products) {
                         </div>`
         productDivs += `</div>`
         productDivs += `</div>`
-        
-
-        productCategory += `<option class="dropdown-item">${product.category}</option>`
     }
     $('#list').html(productDivs);
-    $('#categoryList').html(productCategory);
     
 }
 listProduct(products);
 
+
+
+function addToCart(products) {
+    let shoppingCart = [];
+
+    for(let i=0; i < products.length; i++) {
+        let product = products[i];
+        shoppingCart += `<a href="#">${product.name}</a>`
+    }
+    $('#shoppingCart').html(shoppingCart);
+}
+// addToCart(products);
+
+
 function search() {
     console.log('function works');
 
-    let searchWord = document.getElementById('input').value;
-    //let searchWord = input.toUpperCase();
-    let filteredProducts = products.filter(p=>p.name.includes(searchWord));
+    let searchWord = document.getElementById('input').value.toLowerCase();
+    let filteredProducts = products.filter(p=>p.name.toLowerCase().includes(searchWord));
     listProduct(filteredProducts);
 
     console.log(filteredProducts);
