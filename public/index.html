@@ -24,7 +24,7 @@
               id="input"
               class="form-control"
               onkeyup="search()"
-              placeholder="Search for names.."
+              placeholder="Search for names..."
             />
             <div class="input-group-append">
               <button class="btn btn-secondary" type="button" onclick="search()">
@@ -42,17 +42,12 @@
     </div>
     
     <div id="dropdown">
-        <div class="dropdown">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-            Choose Category
-            </button>
-            <div class="dropdown-menu" id="categoryList">
-                <option value="" selected disabled hidden>--Choose--</option>
-              <option class="dropdown-item">Food</option>
-              <option class="dropdown-item">Electronics</option>
-              <option class="dropdown-item">Sporting</option>
-            </div>
-        </div>
+        <select class="dropdown" id='categories' onchange='filterCategory(value)'>
+            <option class="dropdown-item" value='All'>All</option>
+            <option class="dropdown-item" value='Electronics'>Electronics</option>
+            <option class="dropdown-item" value='Food'>Food</option>
+            <option class="dropdown-item" value='Sporting'>Sporting</option>
+        </select>
     </div>
     <div id="list">
         
@@ -79,7 +74,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/Bootstrap/Select/bootstrap-select.js"></script>
     <script src="products.js"></script>
     <script src="index.js"></script>
   </body>

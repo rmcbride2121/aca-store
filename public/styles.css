@@ -1,3 +1,7 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #top-row {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -6,9 +10,9 @@
     justify-content: space-between;
 }
 
-/* .logo {
-    text-align: left;
-} */
+.logo {
+    text-align: center;
+}
 
 .input-group {
     max-width: 300px;
@@ -16,9 +20,9 @@
     margin: 0 auto;
 }
 
-/* .cart {
-    text-align: right;
-} */
+.cart {
+    text-align: center;
+}
 
 #dropdown {
     text-align: center;
