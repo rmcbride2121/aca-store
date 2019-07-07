@@ -54,7 +54,7 @@ function addToCart(id) {
     let productId = products.find(function(product) {
         return product.id == id;
     });
-    cartItems += `<a href="#">${productId.name}</a>`
+    cartItems += `<a href="#">${productId.name} ${productId.price}</a>`
     
     document.getElementById("shoppingCart").innerHTML = cartItems;
 }
