@@ -50,14 +50,25 @@ function listProduct(products) {
 //function that adds selected items to the users cart
 
 function addToCart(id) {
-    let cartItems = "";
     let productId = products.find(function(product) {
         return product.id == id;
     });
-    cartItems += `<a href="#">${productId.name} ${productId.price}</a>`
-    
-    document.getElementById("shoppingCart").innerHTML = cartItems;
+    cart.push(productId);
+    console.log(cart)
+    return cart;
 }
+
+//view cart
+
+function viewCart() {
+    listProduct(cart);
+    // let shoppingCart = cart.map(product => {
+    //     cartItems += `<a href="#">${product.name} ${product.price}</a>`
+    // })
+    // console.log(cart)
+    //document.getElementById("shoppingCart").innerHTML = shoppingCart;
+}
+//viewCart();
 
 //function called when category is changed via dropdown menu on homepage
 
@@ -77,14 +88,9 @@ function filterCategory(cat){
 //search function
 
 function search() {
-    console.log('function works');
-
     let searchWord = document.getElementById('input').value.toLowerCase();
     let filteredProducts = products.filter(p=>p.name.toLowerCase().includes(searchWord));
     listProduct(filteredProducts);
-
-    console.log(filteredProducts);
-    console.log('logic works');
 }
 
 

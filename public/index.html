@@ -33,20 +33,20 @@
             </div>
           </div>
           <div class="cart dropdown">
-              <button class="btn btn-primary dropbtn" type="button">View Cart <i class="fas fa-shopping-cart"></i></button>
+              <button class="btn btn-primary dropbtn" type="button" onclick="viewCart()">View Cart <i class="fas fa-shopping-cart"></i></button>
               <div id="shoppingCart" class="dropdown-content">
-                  <a href="#">Cart is Empty</a>
-                </div>
+                <a href="#">Cart is Empty</a>
+              </div>
           </div>
           
     </div>
     
     <div id="dropdown">
         <select class="dropdown" id='categories' onchange='filterCategory(value)'>
-            <option class="dropdown-item" value='All'>All</option>
-            <option class="dropdown-item" value='Electronics'>Electronics</option>
-            <option class="dropdown-item" value='Food'>Food</option>
-            <option class="dropdown-item" value='Sporting'>Sporting</option>
+            <option class="dropdown-item" value='all'>All</option>
+            <option class="dropdown-item" value='electronics'>Electronics</option>
+            <option class="dropdown-item" value='food'>Food</option>
+            <option class="dropdown-item" value='sporting'>Sporting</option>
         </select>
     </div>
     <div id="list">
