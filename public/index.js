@@ -8,11 +8,6 @@ window.onload = function() {
     document.getElementById("loginForm").style.display = "block";
     listProduct(products);
 }
-
-//login pop up form
-// window.onload = function() {
-//     document.getElementById("loginForm").style.display = "block";
-// }
   
 function logIn() {
     document.getElementById("loginForm").style.display = "none";
@@ -98,4 +93,8 @@ function search() {
     listProduct(filteredProducts);
 }
 
-
+//'are you still there?' function
+function myFunction() {
+    timeout = setTimeout(function(){ alert("Are you still there?"); }, 60000);
+  }
+  myFunction();
