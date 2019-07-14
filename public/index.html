@@ -34,9 +34,9 @@
           </div>
           <div class="cart dropdown">
               <button class="btn btn-primary dropbtn" type="button" onclick="viewCart()">View Cart <i class="fas fa-shopping-cart"></i></button>
-              <div id="shoppingCart" class="dropdown-content">
+              <!-- <div id="shoppingCart" class="dropdown-content">
                 <a href="#">Cart is Empty</a>
-              </div>
+              </div> -->
           </div>
           
     </div>
@@ -49,6 +49,29 @@
             <option class="dropdown-item" value='sporting'>Sporting</option>
         </select>
     </div>
+
+    <div id="loginForm" class="modal">
+  
+      <form class="modal-content animate">
+        <div class="close-container">
+          <span onclick="logIn()" class="close" title="Close Modal">&times;</span>
+          
+        </div>
+    
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button class="login-button" type="submit" onclick="logIn()">Login</button>
+          
+        </div>
+    
+      </form>
+    </div>
+
     <div id="list">
         
     </div>

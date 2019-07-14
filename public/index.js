@@ -5,7 +5,17 @@ let totalPrice = [];
 
 //functions
 window.onload = function() {
+    document.getElementById("loginForm").style.display = "block";
     listProduct(products);
+}
+
+//login pop up form
+// window.onload = function() {
+//     document.getElementById("loginForm").style.display = "block";
+// }
+  
+function logIn() {
+    document.getElementById("loginForm").style.display = "none";
 }
 
 //function that lists out all the products from the products object
@@ -62,13 +72,8 @@ function addToCart(id) {
 
 function viewCart() {
     listProduct(cart);
-    // let shoppingCart = cart.map(product => {
-    //     cartItems += `<a href="#">${product.name} ${product.price}</a>`
-    // })
-    // console.log(cart)
-    //document.getElementById("shoppingCart").innerHTML = shoppingCart;
 }
-//viewCart();
+
 
 //function called when category is changed via dropdown menu on homepage
 
