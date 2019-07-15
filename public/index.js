@@ -96,5 +96,5 @@ function search() {
 //'are you still there?' function
 function myFunction() {
     timeout = setTimeout(function(){ alert("Are you still there?"); }, 60000);
-  }
-  myFunction();
+}
+myFunction();
